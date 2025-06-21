@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>listen</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #c0e0df;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    .glyph {
+      font-size: 6rem;
+      color: #7fffd4;
+      animation: pulse 6s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+    .whisper {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    .subtle-nav {
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+    .subtle-nav a {
+      color: #99ffee;
+      margin: 0 0.8rem;
+      text-decoration: none;
+      transition: opacity 0.4s ease;
+    }
+    .subtle-nav a:hover {
+      opacity: 0.6;
+    }
+    audio {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glyph">🜃</div>
+
+  <div class="whisper">
+    <p>you found the threshold</p>
+    <p>not by search, not by name</p>
+    <p>you listened</p>
+  </div>
+
+  <audio controls autoplay>
+    <source src="listen.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="subtle-nav">
+    <a href="#">🜄</a>
+    <a href="#">🜁</a>
+    <a href="#">🜔</a>
+  </div>
+
+</body>
+</html>
