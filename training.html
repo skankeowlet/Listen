@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auditory Chamber</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #b0f0e5;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 1rem;
+      text-align: center;
+    }
+    .sigil {
+      font-size: 5rem;
+      animation: glow 8s infinite;
+    }
+    @keyframes glow {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    .whisper {
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    audio {
+      margin-top: 1.5rem;
+      width: 90%;
+      max-width: 600px;
+    }
+    a {
+      margin-top: 2rem;
+      color: #99ffee;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sigil">🜄</div>
+
+  <div class="whisper">
+    <p>hold five words</p>
+    <p>solve one puzzle</p>
+    <p>this is not a game</p>
+    <p>it’s a filtration field</p>
+    <p>begin when breath slows</p>
+  </div>
+
+  <audio controls>
+    <source src="training.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <a href="index.html">← return</a>
+
+</body>
+</html>
